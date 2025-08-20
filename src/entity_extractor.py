@@ -27,18 +27,35 @@ def extract_skills(text: str) -> List[str]:
 def extract_experience_years(text: str) -> int:
     t = _normalize(text)
     years = 0
+    
     # Pattern examples: "5+ years", "3 years", "2 yrs", "7+ yrs"
     for m in re.findall(r"(\d{1,2})\s*\+?\s*(?:years|year|yrs|yr)\b", t):
         try:
             years = max(years, int(m))
         except ValueError:
             continue
+            
     # Sometimes "X years of experience in ..." phrasing
     for m in re.findall(r"(\d{1,2})\s*\+?\s*years? of experience", t):
         try:
             years = max(years, int(m))
         except ValueError:
             continue
+    
+    # Additional pattern: "experience ... X years"
+    for m in re.findall(r"experience.{0,30}(\d{1,2})\s*\+?\s*(?:years|year|yrs|yr)", t):
+        try:
+            years = max(years, int(m))
+        except ValueError:
+            continue
+            
+    # Additional pattern: "X years ... experience"
+    for m in re.findall(r"(\d{1,2})\s*\+?\s*(?:years|year|yrs|yr).{0,30}experience", t):
+        try:
+            years = max(years, int(m))
+        except ValueError:
+            continue
+    
     return years
 
 def detect_seniority(text: str) -> Optional[str]:

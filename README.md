@@ -24,7 +24,10 @@ resume-screening-nlp/
 │   ├── entity_extractor.py # Extract structured information from resumes
 │   ├── nlp_matcher.py      # Compute semantic similarity
 │   ├── candidate_ranker.py # Rank candidates based on multiple factors
-│   └── skills_db.py        # Reference data for scoring
+│   ├── skills_db.py        # Reference data for scoring
+│   ├── analytics.py        # Analytics functions
+│   ├── config.py           # Configuration handling
+│   └── database.py         # Database operations
 ├── static/                 # Static files for web interface
 │   └── css/
 │       └── style.css

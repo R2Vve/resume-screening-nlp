@@ -54,15 +54,23 @@ def clean_text(text: str) -> str:
     text = re.sub(r"[^\x09\x0A\x0D\x20-\x7E]", " ", text)
     return text.strip()
 
-def load_resumes(resume_dir: str) -> List[Dict]:
-    items: List[Dict] = []
-    for filename in os.listdir(resume_dir):
-        path = os.path.join(resume_dir, filename)
-        if not os.path.isfile(path):
-            continue
-        if os.path.splitext(filename)[1].lower() not in ALLOWED_EXTENSIONS:
-            continue
-        raw = extract_text(path)
-        cleaned = clean_text(raw)
-        items.append({"name": filename, "text": cleaned})
-    return items
+def load_resumes(directory: str) -> List[Dict[str, str]]:
+    """Load all resumes from the given directory.
+    
+    Args:
+        directory: Path to directory containing resume files
+        
+    Returns:
+        List of dicts with 'filename' and 'text' keys
+    """
+    resumes = []
+    for filename in os.listdir(directory):
+        if os.path.splitext(filename)[1].lower() in ALLOWED_EXTENSIONS:
+            filepath = os.path.join(directory, filename)
+            try:
+                text = extract_text(filepath)
+                cleaned = clean_text(text)
+                resumes.append({"filename": filename, "text": cleaned})
+            except Exception as e:
+                print(f"Error processing {filename}: {e}")
+    return resumes
