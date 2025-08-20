@@ -1,0 +1,29 @@
+We are seeking a Machine Learning Engineer with strong AI experience.
+
+Required Skills:
+- Python programming and machine learning frameworks (TensorFlow, PyTorch)
+- Experience with deep learning models and neural networks
+- NLP and text processing expertise
+- Data analysis and feature engineering
+- Experience with computer vision applications
+- Strong mathematical background (statistics, linear algebra)
+
+Responsibilities:
+- Develop and implement machine learning algorithms and models
+- Process and analyze large datasets for model training
+- Fine-tune and optimize ML models for production
+- Collaborate with data scientists and engineers
+- Stay up-to-date with the latest research and techniques in AI/ML
+
+Qualifications:
+- 3+ years experience in machine learning or AI development
+- Bachelor's or Master's degree in Computer Science, Data Science, or related field
+- Strong programming skills in Python and familiarity with ML libraries
+- Experience with cloud platforms (AWS, GCP, or Azure)
+- Knowledge of data structures, algorithms, and software design principles
+
+Preferred:
+- Experience with large language models and transformer architectures
+- Contributions to open-source ML projects
+- Knowledge of deployment and MLOps practices
+- Experience with distributed computing and big data technologies

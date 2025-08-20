@@ -1,0 +1,31 @@
+Senior AI Research Scientist
+
+Company: Innovative AI Solutions Inc.
+Location: Remote / Hybrid
+
+Job Overview:
+We're looking for a Senior AI Research Scientist to lead cutting-edge research in artificial intelligence and machine learning. The ideal candidate will have a strong background in deep learning, reinforcement learning, and natural language processing, with publications in top-tier conferences or journals.
+
+Key Responsibilities:
+- Conduct original research in AI/ML with a focus on transformer architectures and large language models
+- Design and implement novel neural network architectures for solving complex problems
+- Lead research projects and mentor junior team members
+- Collaborate with engineering teams to transition research into production systems
+- Publish research findings in top conferences (NeurIPS, ICML, ICLR, ACL)
+- Stay current with latest advancements in AI research and identify new opportunities
+
+Requirements:
+- PhD in Computer Science, Machine Learning, or related field (or equivalent research experience)
+- 5+ years of experience in AI/ML research
+- Strong publication record in top-tier ML/AI conferences or journals
+- Expert-level knowledge of PyTorch or TensorFlow
+- Experience with large language models and attention mechanisms
+- Proficiency in Python and data processing libraries
+- Excellent mathematical foundation in statistics, linear algebra, and calculus
+- Ability to communicate complex technical concepts clearly
+
+Preferred Qualifications:
+- Experience with computer vision and multimodal learning
+- Familiarity with distributed computing and GPU optimization
+- Prior experience leading research teams
+- Open-source contributions to major ML frameworks or libraries
