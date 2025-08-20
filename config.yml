@@ -1,0 +1,38 @@
+scoring_weights:
+  similarity_score: 0.3
+  skill_match: 0.3
+  experience: 0.2
+  education: 0.2
+
+minimum_score: 0.6
+
+preferred_formats:
+  - pdf
+  - docx
+  - txt
+
+spacy_model: en_core_web_sm
+sentence_transformer_model: all-MiniLM-L6-v2
+
+database:
+  path: resume_screening.db
+
+api:
+  enable_rest_api: true
+  port: 5000
+  host: 127.0.0.1
+
+skills_importance:
+  technical: 0.6
+  soft: 0.4
+
+experience_weights:
+  years_multiplier: 0.1
+  relevant_experience_bonus: 0.2
+  
+education_levels:
+  phd: 1.0
+  masters: 0.8
+  bachelors: 0.6
+  diploma: 0.4
+  certificate: 0.2

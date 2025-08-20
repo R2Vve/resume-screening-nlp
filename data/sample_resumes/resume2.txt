@@ -1,0 +1,6 @@
+Michael Rodriguez
+Email: michael.rodriguez@example.com
+
+Mid-level Data Scientist with 3 years experience using Python, SQL, Flask, and data analysis.
+Hands-on with scikit-learn and basic AWS. Built dashboards with Tableau.
+Education: Bachelors in Data Science.

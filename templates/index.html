@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+    <h2>Upload Resumes and Paste Job Description</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="job_description">Job Description</label>
+        <textarea name="job_description" id="job_description" rows="10" placeholder="Paste job description here..." required></textarea>
+
+        <label for="resumes">Resumes (PDF, DOCX, TXT)</label>
+        <input type="file" name="resumes" id="resumes" multiple required>
+
+        <button type="submit">Screen Resumes</button>
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul class="flash">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    {% endwith %}
+
+    <p class="hint">Tip: Try the CLI first with the sample data in data/sample_resumes and data/sample_jobs.</p>
+</section>
+{% endblock %}

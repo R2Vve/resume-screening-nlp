@@ -1,0 +1,4 @@
+We are seeking a Senior Data Scientist with 5+ years of experience.
+Required skills: Python, Machine Learning, Pandas, AWS.
+Nice to have: NLP, TensorFlow, SQL.
+Education: Masters or PhD in Computer Science, Data Science, or related.

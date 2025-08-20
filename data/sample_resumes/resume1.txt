@@ -1,0 +1,6 @@
+Sarah Chen
+Email: sarah.chen@example.com
+
+Experienced Senior Data Scientist with 6 years of experience in Python, Machine Learning, and NLP.
+Strong background in Pandas, NumPy, scikit-learn, and AWS (EC2, S3). Built ML pipelines and deployed models.
+Education: Masters in Computer Science.
